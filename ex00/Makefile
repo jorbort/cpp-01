@@ -8,7 +8,7 @@ HEADER = Zombie.hpp
 %.o: %.cpp
 	$(CC) -I. $(CFLAG) -c $< -o $@
 
-$(NAME): $(OBJS) $(HEADER)
+$(NAME): $(OBJS) $(HEADER) Makefile
 	$(CC) $(CFLAG) $(OBJS) -o $(NAME)
 
 clean:
