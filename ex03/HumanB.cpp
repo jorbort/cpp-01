@@ -9,12 +9,12 @@ HumanB::~HumanB()
 {
 }
 
-void HumanB::setWeapon(Weapon newArma)
+void HumanB::setWeapon(Weapon &newArma)
 {
-	arma = newArma;
+	arma = &newArma;
 }
 
 void HumanB::attack(void)
 {
-	std::cout << name << " attacks with their " << arma.getType() << std::endl;
+	std::cout << name << " attacks with their " << arma->getType() << std::endl;
 }
