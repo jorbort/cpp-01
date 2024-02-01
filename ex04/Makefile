@@ -1,5 +1,5 @@
 NAME = a.out
-CFLAG = -Wall -Werror -Wextra -g -std=c++98 -fsanitize=address
+CFLAG = -Wall -Werror -Wextra -g -pedantic -std=c++98 ##-fsanitize=address
 SRC = main.cpp 
 CC = c++
 OBJS = $(SRC:.cpp=.o)
