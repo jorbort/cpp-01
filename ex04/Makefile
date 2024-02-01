@@ -8,7 +8,7 @@ HEADER = program.hpp
 %.o: %.cpp
 	$(CC) -I. $(CFLAG) -c $< -o $@
 
-$(NAME): $(OBJS) Makefile
+$(NAME): $(OBJS) $(HEADER) Makefile
 	$(CC) $(CFLAG) $(OBJS) -o $(NAME)
 
 clean:
